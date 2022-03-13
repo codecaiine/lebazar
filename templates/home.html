@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,23 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="img/favicon.png" rel="apple-touch-icon">
-    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="{% static 'img/favicon.png' %}" rel="apple-touch-icon">
+    <link href="{% static 'img/favicon.png' %}" rel="shortcut icon" type="image/png">
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title>Farmart - Html Template</title>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/Linearicons/Font/demo-files/demo.css">
-    <link rel="stylesheet" href="plugins/noUiSlider/nouislider.css">
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
-    <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="plugins/slick/slick.css">
-    <link rel="stylesheet" href="plugins/lightGallery/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'fonts/Linearicons/Font/demo-files/demo.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/noUiSlider/nouislider.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/select2/dist/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/owl-carousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/lightGallery/dist/css/lightgallery.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
@@ -967,9 +968,8 @@
             <div class="container">
                 <div class="ps-block__header">
                     <h3 class="ps-block__title"><i class="icon-power"></i>Flash Deals<span class="ps-countdown"><span class="ps-countdown-end">Ends in : </span><span class="ps-countdown"><b class="hours">00</b> hours : <b class="minutes">12</b> mins : <b class="seconds">45</b> secs</span>
-                        <span
-                            class="ps-countdown mobile"><b class="hours">00</b> h : <b class="minutes">12</b> m : <b class="seconds">45</b> s</span>
-                            </span>
+                        <span class="ps-countdown mobile"><b class="hours">00</b> h : <b class="minutes">12</b> m : <b class="seconds">45</b> s</span>
+                        </span>
                     </h3><a class="ps-block__view" href="flash-sale.html">View all<i class="icon-chevron-right"></i></a>
                 </div>
                 <div class="flashdeal--content">
@@ -1227,8 +1227,7 @@
         <section class="section-categories--default">
             <div class="container">
                 <div class="categories--floating"><a class="floating-item" href="#freshFoodBlock"><i class="icon-apple"></i></a><a class="floating-item" href="#foodCupboardBlock"><i class="icon-ice-cream2"></i></a><a class="floating-item" href="#readyMealBlock"><i class="icon-platter"></i></a>
-                    <a
-                        class="floating-item" href="#drinkTeaBlock"><i class="icon-glass2"></i></a><a class="floating-item" href="#kitchenBlock"><i class="icon-dinner"></i></a>
+                    <a class="floating-item" href="#drinkTeaBlock"><i class="icon-glass2"></i></a><a class="floating-item" href="#kitchenBlock"><i class="icon-dinner"></i></a>
                 </div>
                 <div class="categories--block">
                     <h3><a class="categories__title" id="freshFoodBlock">Fresh Foods</a></h3>
@@ -1308,35 +1307,34 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/01-Fresh/01_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__new">New </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Oranges, Valencia</a></h5>
-                                                <p class="ps-product__unit">5 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__new">New </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Oranges, Valencia</a></h5>
+                                            <p class="ps-product__unit">5 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4" selected="selected">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(6)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">15% Off</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$3.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">15% Off</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$3.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -1374,69 +1372,67 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/01-Fresh/01_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">25% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Watermelon, Seedless</a></h5>
-                                                <p class="ps-product__unit">450g</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">25% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Watermelon, Seedless</a></h5>
+                                            <p class="ps-product__unit">450g</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4" selected="selected">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(13)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$6.90</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$6.90</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/01-Fresh/01_16a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">35% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Broccoli Crowns</a></h5>
-                                                <p class="ps-product__unit">300g</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">35% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Broccoli Crowns</a></h5>
+                                            <p class="ps-product__unit">300g</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5" selected="selected">5</option>
                                                 </select><span>(4)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$3.90</span><span class="ps-product__price">$9.99</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$3.90</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$3.90</span><span class="ps-product__price">$9.99</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$3.90</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -1474,35 +1470,34 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/01-Fresh/01_18a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__stock">Out of stock </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Oniins, Green</a></h5>
-                                                <p class="ps-product__unit">300g</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__stock">Out of stock </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Oniins, Green</a></h5>
+                                            <p class="ps-product__unit">300g</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4" selected="selected">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(2)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span><span class="ps-product__off">35% Off</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$6.90</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span><span class="ps-product__off">35% Off</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$6.90</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -1616,69 +1611,67 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/02-FoodCupboard/02_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">15% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Bunny Round White</a></h5>
-                                                <p class="ps-product__unit">150g</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">15% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Bunny Round White</a></h5>
+                                            <p class="ps-product__unit">150g</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(0)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$3.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$3.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/02-FoodCupboard/02_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">30% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">French Bread</a></h5>
-                                                <p class="ps-product__unit">150g</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">30% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">French Bread</a></h5>
+                                            <p class="ps-product__unit">150g</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(0)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$4.99</span><span class="ps-product__price">$8.99</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$4.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$4.99</span><span class="ps-product__price">$8.99</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$4.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -1780,69 +1773,67 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/02-FoodCupboard/02_12a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__new">New </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">$ Ct Pills Twirls</a></h5>
-                                                <p class="ps-product__unit">200g</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__new">New </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">$ Ct Pills Twirls</a></h5>
+                                            <p class="ps-product__unit">200g</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5" selected="selected">5</option>
                                                 </select><span>(34)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span><span class="ps-product__off">35% Off</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$6.90</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span><span class="ps-product__off">35% Off</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$6.90</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/02-FoodCupboard/02_19a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">50% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Ball Park Hot Dog Buns</a></h5>
-                                                <p class="ps-product__unit">90lbs</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">50% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Ball Park Hot Dog Buns</a></h5>
+                                            <p class="ps-product__unit">90lbs</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(0)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$4.99</span><span class="ps-product__price">$8.99</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$4.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$4.99</span><span class="ps-product__price">$8.99</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$4.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1925,69 +1916,67 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/05-ReadyMeals/05_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__new">New </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Hot Mashed Potatoes</a></h5>
-                                                <p class="ps-product__unit">1 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__new">New </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Hot Mashed Potatoes</a></h5>
+                                            <p class="ps-product__unit">1 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4" selected="selected">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(6)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off"></span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$3.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off"></span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$3.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/05-ReadyMeals/05_3a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">90% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Mac & Cheese</a></h5>
-                                                <p class="ps-product__unit">1 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">90% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Nesco</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Mac & Cheese</a></h5>
+                                            <p class="ps-product__unit">1 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(0)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$4.99</span><span class="ps-product__price">$8.99</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$4.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$4.99</span><span class="ps-product__price">$8.99</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$4.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -2089,35 +2078,34 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/05-ReadyMeals/05_8a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">25% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Rsr Potato Salad</a></h5>
-                                                <p class="ps-product__unit">1 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">25% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Rsr Potato Salad</a></h5>
+                                            <p class="ps-product__unit">1 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(0)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__price-default">$</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__price-default">$</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -2537,35 +2525,34 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/09-KitchenDining/09_2a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__new">New </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Saute Pan Silver</a></h5>
-                                                <p class="ps-product__unit">2 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__new">New </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Saute Pan Silver</a></h5>
+                                            <p class="ps-product__unit">2 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4" selected="selected">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(6)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">15% Off</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$3.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span><span class="ps-product__off">15% Off</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$3.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -2603,35 +2590,34 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/09-KitchenDining/09_4a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">49% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Emoticon Cookie</a></h5>
-                                                <p class="ps-product__unit">1 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">49% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Karery Store</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Emoticon Cookie</a></h5>
+                                            <p class="ps-product__unit">1 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4" selected="selected">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(13)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$5.99</span><span class="ps-product__price">$6.90</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$5.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$5.99</span><span class="ps-product__price">$6.90</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$5.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -2669,69 +2655,67 @@
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/09-KitchenDining/09_10a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__offbadge">30% Off </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Arla Organic Free Range Milk</a></h5>
-                                                <p class="ps-product__unit">1 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__offbadge">30% Off </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Farmart</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Arla Organic Free Range Milk</a></h5>
+                                            <p class="ps-product__unit">1 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(0)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$3.99</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$3.99</span><span class="ps-product__price">$4.90</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$3.99</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
                                     <div class="ps-product--standard">
                                         <a href="product-default.html"><img class="ps-product__thumbnail" src="img/products/09-KitchenDining/09_11a.jpg" alt="alt" /></a><a class="ps-product__expand" href="javascript:void(0);" data-toggle="modal" data-target="#popupQuickview"><i class="icon-expand"></i></a>
-                                        <span
-                                            class="ps-badge ps-product__new">New </span>
-                                            <div class="ps-product__content">
-                                                <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
-                                                <h5><a class="ps-product__name" href="product-default.html">Dinamond Pan</a></h5>
-                                                <p class="ps-product__unit">1 per pack</p>
-                                                <div class="ps-product__rating">
-                                                    <select class="rating-stars">
+                                        <span class="ps-badge ps-product__new">New </span>
+                                        <div class="ps-product__content">
+                                            <p class="ps-product__type"><i class="icon-store"></i>Sun Farm</p>
+                                            <h5><a class="ps-product__name" href="product-default.html">Dinamond Pan</a></h5>
+                                            <p class="ps-product__unit">1 per pack</p>
+                                            <div class="ps-product__rating">
+                                                <select class="rating-stars">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     <option value="4" selected="selected">4</option>
                                                     <option value="5">5</option>
                                                 </select><span>(2)</span>
-                                                </div>
-                                                <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span><span class="ps-product__off">35% Off</span>
-                                                </p>
                                             </div>
-                                            <div class="ps-product__footer">
-                                                <div class="def-number-input number-input safari_only">
-                                                    <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
-                                                    <input class="quantity" min="0" name="quantity" value="1" type="number" />
-                                                    <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
-                                                </div>
-                                                <div class="ps-product__total">Total: <span>$6.90</span>
-                                                </div>
-                                                <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
-                                                <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                            <p class="ps-product-price-block"><span class="ps-product__sale">$6.90</span><span class="ps-product__price">$9.99</span><span class="ps-product__off">35% Off</span>
+                                            </p>
+                                        </div>
+                                        <div class="ps-product__footer">
+                                            <div class="def-number-input number-input safari_only">
+                                                <button class="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="icon-minus"></i></button>
+                                                <input class="quantity" min="0" name="quantity" value="1" type="number" />
+                                                <button class="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="icon-plus"></i></button>
                                             </div>
+                                            <div class="ps-product__total">Total: <span>$6.90</span>
+                                            </div>
+                                            <button class="ps-product__addcart" data-toggle="modal" data-target="#popupAddToCart"><i class="icon-cart"></i>Add to cart</button>
+                                            <div class="ps-product__box"><a class="ps-product__wishlist" href="wishlist.html">Wishlist</a><a class="ps-product__compare" href="wishlist.html">Compare</a></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-3 p-0">
@@ -2990,8 +2974,7 @@
                                         </div>
                                         <div class="product__footer">
                                             <div class="ps-social--share"><a class="ps-social__icon facebook" href="#"><i class="fa fa-thumbs-up"></i><span>Like</span><span class="ps-social__number">0</span></a><a class="ps-social__icon facebook" href="#"><i class="fa fa-facebook-square"></i><span>Like</span><span class="ps-social__number">0</span></a>
-                                                <a
-                                                    class="ps-social__icon twitter" href="#"><i class="fa fa-twitter"></i><span>Like</span></a><a class="ps-social__icon" href="#"><i class="fa fa-plus-square"></i><span>Like</span></a></div>
+                                                <a class="ps-social__icon twitter" href="#"><i class="fa fa-twitter"></i><span>Like</span></a><a class="ps-social__icon" href="#"><i class="fa fa-plus-square"></i><span>Like</span></a></div>
                                         </div>
                                     </div>
                                 </div>
